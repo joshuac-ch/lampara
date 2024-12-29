@@ -10,16 +10,43 @@
     <div class="hero">
         <nav>
             <img src="images/menu.png" class="menu" alt="">
-            <img src="images/logo.png" class="logo" alt="">
+            <img src="images/logo.png" class="logo"  alt="">
             <ul>
                 <li><a href="">Latest</a></li>
                 <li><a href="">Modern</a></li>
                 <li><a href="">Comptemporaneo</a></li>
                 <li><a href="">Affordable</a></li>
             </ul>
-            <button type="button"><span></span></button>
+            <button type="button" onclick="toggleBtn()" class="active" id="btn"><span></span></button>
         </nav>
+        <div class="lampara">
+            <img src="/images/lamp.png" class="lamp" alt="">
+            <img src="/images/light.png" class="light" id="light1" alt="">
+            
+        </div>
+        <div class="text-c">
+            <h1>Latest<br> in Lighting</h1>
+            <p>esta es la lampara de nuestra ocmpañia para innovar ideas 
+                innovadoras    </p>
+                <a href="">Checkea todas las colecciones</a>
+                <div class="control">
+                    <p>04</p>
+                    <div class="line"><span></span></div>
+                    <p>05</p>
+                </div>
+        </div>
     </div>
     
+   
 </body>
+<script>
+    let boton=document.getElementById("btn")
+    let prender=document.getElementById("light1")
+    let on=document.querySelector(".light")
+    function toggleBtn(){
+        boton.classList.toggle("active");
+        prender.classList.toggle("on");
+               
+    }
+</script>
 </html>
